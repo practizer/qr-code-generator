@@ -105,7 +105,7 @@
   function registerServiceWorker() {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-        .register('/monetag/sw.js', { scope: '/' })
+        .register('/sw.js', { scope: '/' })
         .then((registration) => {
           console.log('Monetag SW registered:', registration.scope);
         })
